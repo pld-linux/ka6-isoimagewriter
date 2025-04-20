@@ -70,7 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/isoimagewriter
 %{_desktopdir}/org.kde.isoimagewriter.desktop
 %{_iconsdir}/hicolor/scalable/apps/org.kde.isoimagewriter.svg
-%{_datadir}/isoimagewriter/arch-signing-key.gpg
-%{_datadir}/isoimagewriter/neon-signing-key.gpg
-%{_datadir}/isoimagewriter/ubuntu-signing-key.gpg
+%{_datadir}/isoimagewriter
 %{_datadir}/metainfo/org.kde.isoimagewriter.appdata.xml
