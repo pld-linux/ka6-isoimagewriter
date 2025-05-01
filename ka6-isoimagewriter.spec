@@ -8,7 +8,7 @@
 Summary:	Isoimagewriter
 Name:		ka6-%{kaname}
 Version:	25.04.0
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -60,6 +60,9 @@ ctest --test-dir build
 %install
 rm -rf $RPM_BUILD_ROOT
 %ninja_install -C build
+
+# unsupported locale (glibc-2.41)
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ie
 
 %find_lang %{kaname} --all-name --with-kde
 
