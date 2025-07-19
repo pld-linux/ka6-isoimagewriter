@@ -19,7 +19,6 @@ BuildRequires:	Qt6DBus-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= %{qtver}
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-tools
-BuildRequires:	gpgme-qt6-devel
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-karchive-devel >= %{kframever}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
@@ -29,6 +28,7 @@ BuildRequires:	kf6-kiconthemes-devel >= %{kframever}
 BuildRequires:	kf6-kwidgetsaddons-devel >= %{kframever}
 BuildRequires:	kf6-solid-devel >= %{kframever}
 BuildRequires:	ninja
+BuildRequires:	qgpgme-qt6-devel
 BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	tar >= 1:1.22
