@@ -37,7 +37,10 @@ Requires(post,postun):	desktop-file-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Isoimagewriter.
+Program to write hybrid ISO files onto USB disks.
+
+%description -l pl.UTF-8
+Program do zapisywania hybrydowych plików ISO na dyski USB.
 
 %prep
 %setup -q -n %{kaname}-%{version}
