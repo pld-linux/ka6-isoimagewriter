@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.04.2
+%define		kdeappsver	26.04.3
 %define		kframever	6.8
 %define		qtver		6.8
 %define		kaname		isoimagewriter
 Summary:	Isoimagewriter
 Name:		ka6-%{kaname}
-Version:	26.04.2
+Version:	26.04.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	533f98eeeb630d39d458758875a231af
+# Source0-md5:	1ea82ffd260394c94cb9e2977190abc2
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
